@@ -1,0 +1,109 @@
+
+<include src="./partials/header.html" title="Registro de sociedades"></include>
+
+<section id="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="entry-title">
+                    <span class="text-h6">Ventanilla única</span>
+                    <h1>Registro de sociedades</h1>
+                    <div class="divider"></div>
+                    <small>Los datos personales mostrados en el presente listado son responsabilidad del Colegio Oficial de Ingenieros Industriales de Aragón y la Rioja cuya finalidad es gestionar el servicio con fines profesionales. Estos datos serán publicados en cumplimiento de una obligación legal y no podrán ser utilizados para el envío de publicidad o prospección comercial sin el consentimiento del usuario. Para más información sobre el tratamiento de sus datos puede dirigirse a la Política de Privacidad.</small> 
+                </div>
+            </div>
+        </div><!-- .row -->
+        <div class="row">
+            <div class="col-xs-12 mb-6">
+                <form id="section-filters" class="bg-white">
+                    <div class="filters-search">
+                        
+                        <div class="form-group">
+                            <label class="screen-reader-text" for="nif">Nombre o nº de sociedad</label>
+                            <input type="search" class="form-control" id="nif" aria-describedby="nif" placeholder="Nombre o nº de sociedad">
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="#" class="btn--white btn--md">Limpiar</button>
+                            <button type="submit" class="btn--primary btn--md">Buscar</button>
+                        </div>
+                        
+                    </div>
+                    
+                  </form>
+            </div>
+        </div><!-- .row  Filters -->
+    </div><!-- .container -->
+</section>
+ 
+<main class="page mt-3">
+
+    <div class="container">
+        <div class="row middle-xs between-xs">
+            <div class="col-xs-12 col-sm-6">
+                <p>2.000 Colegiados</p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination pagination-lg justify-content-center">
+                        <li class="page-item active"><span class="page-link">1</span></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>    
+                </nav>    
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-1">
+        <table class="table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Nº Registro</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Ver</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>RT INGENIERIA Y CONSULTORIA DE PROYECTOS INNOVADORES, S.L.P.</td>
+                <td><button class="btn--primary btn--icon"><svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="./assets/icons/sprite-icons.svg#eye"></use>
+                </svg></button></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>IBARMEDIN, S.L.P.</td>
+                <td><button class="btn--primary btn--icon"><svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="./assets/icons/sprite-icons.svg#eye"></use>
+                </svg></button></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>ASENSIO GIMENO, ANGEL</td>
+                <td><button class="btn--primary btn--icon"><svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="./assets/icons/sprite-icons.svg#eye"></use>
+                </svg></button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <div class="container mb-3">
+        <div class="row end-xs">
+            <div class="col-xs-12 col-sm-6">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination pagination-lg justify-content-center">
+                        <li class="page-item active"><span class="page-link">1</span></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>    
+                </nav>    
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<include src="./partials/footer.html"></include>

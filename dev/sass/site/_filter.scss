@@ -10,6 +10,16 @@
 		@include breakpoint(mobile) {
 			grid-template-columns: 1fr;
 			padding: 0;
+
+			.btn-group {
+				padding: $space__unit 0 $space__unit 0;
+				justify-content: center;
+
+			}
+		}
+
+		.btn-group {
+			justify-self: end;
 		}
 		
 		.form-group {
@@ -40,6 +50,7 @@
 				background-size: auto 100%;
 			}
 		}
+		
 	}
 
 	
