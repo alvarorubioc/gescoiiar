@@ -10,16 +10,22 @@
 		@include breakpoint(mobile) {
 			grid-template-columns: 1fr;
 			padding: 0;
-
-			.btn-group {
-				padding: $space__unit 0 $space__unit 0;
-				justify-content: center;
-
-			}
 		}
 
 		.btn-group {
 			justify-self: end;
+			@include breakpoint(mobile) {
+				display: none;
+			}
+		}
+
+		.btn-group-2 {
+			justify-self: end;
+			@include breakpoint(mobile) {
+				padding: $space__unit 0 $space__unit 0;
+				justify-self: center;
+			}
+			
 		}
 		
 		.form-group {
@@ -53,24 +59,42 @@
 		
 	}
 
-	
-
 	.filters-select {
 		display: flex;
 		align-items: center;
 		padding: $space__unit;
 
+		@include breakpoint(mobile) {
+			flex-direction: column;
+		}
+
 		.form-group {
 			margin-right: $space__unit;
+			@include breakpoint(mobile) {
+				margin-right: 0;
+				margin-bottom: $space__unit;
+				width: 100%;
+			}
 		}
 
 		.form-btn {
 			margin-left: auto;
+			@include breakpoint(mobile) {
+				display: none;
+			}
 		}
 
 		select {
 			border: 1px solid $color__gray;
 			background-color: white;
+		}
+
+		.btn-group {
+			display: none;
+			@include breakpoint(mobile) {
+				justify-self: center;
+				display: block;
+			}
 		}
 	}
 	

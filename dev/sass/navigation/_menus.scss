@@ -13,10 +13,14 @@
 	margin: 0;
 	padding: 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: end;
 	li {
 		list-style: none;
 		position: relative;
+		padding-right: $space__unit;
+		&:last-child {
+			padding-right: 0;
+		}
 		a {
 			color: $color__text-main;
 			display: flex;
