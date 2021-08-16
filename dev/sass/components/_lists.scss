@@ -1,0 +1,25 @@
+ul, ol {
+	margin: 0 0 $space__unit $space__unit;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: $space__unit;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 $space__unit $space__unit;
+}

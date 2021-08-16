@@ -1,0 +1,271 @@
+.site-header{
+	padding-top: $space-xxs;
+}
+
+.site-search {
+	@include breakpoint(mobile) {
+		display: none;
+	}
+}
+
+
+#top-menu {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	li {
+		list-style: none;
+		position: relative;
+		a {
+			color: $color__text-main;
+			display: flex;
+			&:hover {
+				color: $color__link-hover;
+			}
+
+			svg {
+				margin-right: $space-xxs;
+				fill: $color__primary;
+				@include breakpoint(mobile) {
+					width: $space-sm;
+					height: $space-sm;
+				}
+			}
+
+			span {
+				@include breakpoint(mobile) {
+					font-size: 0;
+					text-indent: -99999px
+				}
+			}
+		}
+	}
+}
+
+.btn-menu {
+	padding: $space__unit;
+	border-top: 1px solid $color__gray;
+
+	button {
+		background-color: white;
+		padding: 0;
+	}
+}
+
+.btn-agenda {
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	a {
+		background-color: $color__secondary;
+		color: $color__white !important;
+		height: 40px;
+		line-height: 0.5;
+		border-radius: $border__radius;
+		transition: all 0.3s ease;
+	}
+
+	@include breakpoint(mobile) {
+		margin: auto;
+		a {
+			background-color: $color__white;
+			color: $color__text-main !important;
+			height: auto;
+			line-height: initial;
+		}
+	}
+}
+
+
+.main-navigation {
+	display: block;
+	width: 100%;
+	border-top: 1px solid $color__gray;
+	margin-top: $space-xxs;
+
+	@include breakpoint(mobile) {
+		border-top: none;
+		margin-top: 0;
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		@include breakpoint(mobile) {
+			display: block;
+		}
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+			display: block;
+
+			@include breakpoint(mobile) {
+				position: relative;
+				left: 0;
+				display: none;
+				float: none;
+				box-shadow: none;
+			}
+
+			.current_page_item > a,
+			.current-menu-item > a,
+			.current-page-ancestor > a,
+			.current-menu-ancestor > a {
+				border-bottom: 0;
+				border-left: 4px solid $color__primary;
+				background-color: $color__primary-20;
+				transition: 0.2s all linear;
+			}
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+
+				&:hover > ul,
+				&.focus > ul {
+					display: block;
+					left: auto;
+				}
+			}
+
+			a {
+				width: 300px;
+				background-color: $color__white;
+				transition: 0.1s all linear;
+				@include breakpoint(mobile) {
+					width: 100vw;
+					background-color: $color__ligth;
+					font-weight: normal;
+				}
+			}
+
+			a:hover,
+			a.focus {
+				background-color: $color__ligth;
+				border-left: 4px solid $color__primary;
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		position: relative;
+
+		@include breakpoint(mobile) {
+			border-top: 1px solid $color__gray;
+		}
+		&:hover > a,
+		&.focus > a {
+			color: $color__primary;
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: $color__text-main;
+		font-weight: bold;
+		padding: $space__unit;
+		
+		&:hover {
+			color: $color__link-hover;
+		}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current-page-ancestor > a,
+	.current-menu-ancestor > a {
+		border-bottom: 4px solid $color__primary;
+	}
+}
+
+
+
+@media screen and (min-width: 37.5em) {
+
+	.btn-menu {
+		display: none;
+	}
+	
+}
+
+// Buttons to mobile actions
+
+.menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 56px;
+    height: 56px;
+    line-height: 68px;
+    border-left: 1px solid $color__gray;
+    text-align: center;
+	cursor: pointer;
+
+	&:after {
+		content: '';
+		display: inline-block;
+		position: relative;
+		width: 1.5rem;
+		height: 1.5rem;
+		mask: url('./assets/img/chevron-bottom.svg') no-repeat 50% 50%;
+		mask-size: cover;
+		background-color: $color__gray-dark;
+		transition: all 0.3s ease;
+				
+	}
+	
+	&.is-active:after{
+		transform: rotate(180deg);
+		transition: all 0.3s ease;
+	}
+	
+}
+
+.show-on-mobile {
+	display: block;
+}
+
+
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+	}
+
+	.nav-links {
+		display: flex;
+	}
+
+	.nav-previous {
+		flex: 1 0 50%;
+	}
+
+	.nav-next {
+		text-align: end;
+		flex: 1 0 50%;
+	}
+}

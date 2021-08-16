@@ -1,0 +1,50 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// edit font rendering -> tip: use for light text on dark backgrounds
+@mixin fontSmooth {
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+// Responsive
+@mixin breakpoint($point) {
+	@if $point == desktop {
+	  @media (max-width: 1440px) { @content ; }
+   }
+	@else if $point == laptop {
+	  @media (max-width: 1200px) { @content ; }
+   }
+	 @else if $point == tablet {
+	  @media (max-width: 1024px) { @content ; }
+   }
+	@else if $point == mobile {
+	  @media (max-width: 768px)  { @content ; }
+   }
+   @else if $point == xsmobile {
+	  @media (max-width: 414px)  { @content ; }
+   }
+ }

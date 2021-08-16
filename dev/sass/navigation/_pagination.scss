@@ -1,0 +1,36 @@
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    float: right;
+}
+
+.page-item {
+	margin-left: $space__unit;
+    background-color: $color__primary;
+    border-radius: $border__radius;
+    width: 2rem;
+    
+
+    &.active span{
+        background-color: $color__link;
+        color: white;
+        border-radius: $border__radius;
+    }
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    line-height: 1.25;
+    color: white;
+    
+    &:hover {
+        background-color: $color__link;
+        border-radius: $border__radius;
+        color: white;
+    }
+}

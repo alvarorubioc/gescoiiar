@@ -1,0 +1,117 @@
+a.btn, .btn, button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	display: inline-flex;
+	position: relative;
+	text-decoration: none;
+	line-height: 1;
+	border-radius: $border__radius;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	border: 0;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	&:active {
+		transition: none;
+	}
+
+	span, strong {
+		margin: 0 $space-xxs 0 $space-xxs;
+	}
+	
+	.icon {
+		/* icon inherits color of button label */
+		color: inherit;
+		flex-shrink: 0;
+	}
+}
+	
+/* Main buttons */
+a.btn--primary, .btn--primary {
+	background-color: $color__primary;
+	color: $color__white;
+	@include fontSmooth;
+
+	&:hover {
+		background-color: $color__primary-dark;
+		color: $color__white;
+	}
+}
+
+a.btn--secondary, .btn--secondary {
+	background-color: $color__secondary;
+	color: $color__white;
+	@include fontSmooth;
+	
+	&:hover {
+		background-color: $color__primary;
+		color: $color__white;
+	}
+}
+
+
+a.btn--white, .btn--white {
+	background-color: $color__white;
+	color: $color__primary;
+	@include fontSmooth;
+
+	&:hover {
+		color: $color__primary-dark;
+	}
+}
+
+/* feedback */
+.btn[disabled] {
+	cursor: not-allowed;
+	background-color: $color__gray;
+	color: $color__white;
+	box-shadow: none;
+	opacity: 0.6;
+
+	&:visited {
+		color: var(--btn-disabled-label);
+	}
+}
+
+/* button size */
+.a.btn--sm, .btn--sm {
+	padding: $space-xxs $space-xs;
+	height: 32px;
+}
+
+a.btn--md, .btn--md {
+	padding: 0 $space-sm;
+	height: 40px;
+}
+
+a.btn--lg, .btn--lg {
+	padding: $space-xs $space-md;
+	height: 48px;
+}
+
+.btn--full {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+/* buttons group */
+.btn-group {
+	display: flex;
+	flex-wrap: wrap;
+
+	> * {
+		margin-right: $space-xs;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}
+
+
+
+

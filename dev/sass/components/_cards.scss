@@ -1,0 +1,217 @@
+@mixin card {
+    background: $color__white;
+    border-radius: $border__radius;
+    box-shadow: 0 16px 24px 0 rgba(50,50,50,0.06);
+    position: relative;
+    border: 1px solid $color__gray;
+    &.card--border {
+        border-left: 8px solid $color__primary;
+    }
+
+    &:hover {
+        box-shadow: 0 8px 10px 1px rgba(0,0,0,0.10), 0 3px 14px 2px rgba(0,0,0,0.10), 0 5px 5px -3px rgba(0,0,0,0.20);
+    }
+
+    .card-img {
+        position: relative;
+        span {
+            display: flex;
+            &:hover {cursor: pointer;}
+        }
+        img {
+            border-radius: $border__radius $border__radius 0 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            max-height: 12.75rem;
+        }
+    }
+    
+    .card-content {
+        padding: $space-xs;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    svg {
+        fill: $color__primary;    
+    }
+}
+
+.card {
+    @include card;
+    display: flex;
+    flex-direction: column;
+
+    .card-content {
+        flex: 1;
+        
+        .text-caption {
+            padding-bottom: $space-xxs;
+        }
+
+        .card-content__info {
+            padding-top: $space__unit;
+            font-size: 80%;
+        }
+
+    }
+
+    .card-img__tag {
+        position: absolute;
+        right: $space-xs;
+        bottom: -16px;
+    }
+
+    .card-footer {
+        border-top: 1px solid $color__ligth;
+        padding: $space__unit $space-xs;
+        font-size: 80%;
+    }
+
+    svg {
+        margin-right: $space-xxs;
+    }
+}
+
+
+.card--horizontal {
+    @include card;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: $space-xs;
+    
+    @include breakpoint(mobile) {
+        flex-direction: column;
+    } 
+   
+    .card-icon {
+        flex-basis: 25%;
+        padding: $space-xs;
+        border-radius: $border__radius 0 0 $border__radius;
+        display: flex;
+    }
+
+    .card-avatar {
+        flex-basis: 8.333%;
+        padding: $space-xs 0 $space-xs $space-xs;
+        border-radius: $border__radius 0 0 $border__radius;
+    }
+    
+    .card-img {
+        flex-basis: 50%;
+        
+        a {display: flex;}
+
+        img {
+            border-radius: $border__radius 0 0 $border__radius;
+            @include breakpoint(mobile) {
+                border-radius: $border__radius $border__radius 0 0;
+            }
+        }
+
+        .card-img__tag {
+            position: absolute;
+            left: $space-xxs;
+            top: $space-xxs;
+        }
+    }
+
+    .card-content {
+        flex-basis: 60%;
+
+        .text-caption {
+            margin-bottom: $space-xxs;
+            color: $color__primary;
+        }
+
+        .entry-meta {
+            svg {
+                fill: $color__gray;
+            }
+        }
+
+        a {
+            &:before {
+                cursor: pointer;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .card-footer {
+        border-left: 1px solid $color__ligth;
+        padding: $space-xs;
+        @include breakpoint(mobile) {
+            border-left: 0;
+            border-top: 1px solid $color__ligth;
+            justify-content: space-between;
+            display: flex;
+
+            > div {
+                display: flex;
+
+                &:first-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            svg {
+                width: 24px;    
+            }
+        }
+        
+    }
+}
+
+.card--blog {
+    @include card;
+    display: flex;
+    flex-direction: column;
+    
+
+    .card-content {
+        display: flex;
+        background-color: $color__primary;
+        padding: $space-xxs $space__unit;
+        border-radius: 0 0 $border__radius $border__radius;
+        flex-grow: 1;
+        h3 {margin-bottom: 0;}
+        a {
+            color: $color__white;
+            max-width: 280px;
+            &:hover{
+                color: $color__primary-dark;
+            }
+        }
+
+        span.icon-format {
+            background-color: $color__primary-dark;
+            border-radius: $border__radius;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            &:hover {
+                cursor: pointer;
+                background-color: $color__white;
+                svg {
+                    fill: $color__primary;
+                }
+            }
+            svg {
+                fill: $color__white;
+                
+            }
+        }
+    }
+}
