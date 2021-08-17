@@ -1,5 +1,9 @@
-#hero {
+.colegiado #hero {
     background-color: $color__ligth;
+}
+
+#hero {
+    background-color: $color__gray;
 
     .hero-link {
         font-weight: bold;
@@ -7,7 +11,7 @@
     }
 
     .entry-title {
-        padding: $space-xl 0;
+        padding: $space-lg 0 $space-md 0;
     }
 
     .entry-meta {

@@ -1,32 +1,11 @@
-#section-actualidad {
-    background-image: url(./assets/img/bg-section-formacion.svg);
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    background-size: 175.44px 175px;
-
-    @include breakpoint(tablet) {
-        background-size: calc( 175.44px/2 ) calc( 175px/2 );
-    }
-}
-
-#section-formacion {
-    background-image: url(./assets/img/bg-section-actualidad.svg), url(./assets/img/bg-section-actualidad-2.svg);
-    background-position: left top, right bottom;
-    background-repeat: no-repeat;
-    background-size: 175.44px 180.37px, 223.54px 175px;
-
-    @include breakpoint(tablet) {
-        background-size: calc( 175.44px/2 ) calc( 180.37px/2 ), calc( 223.54px/2 ) calc( 175px/2 );
-    }
-}
-
-#section-servicios {
-    background-image: url(./assets/img/bg-section-servicios.svg);
+#section-main {
+    position: relative;
+    background-image: url(../img/bg-registro-colegiados.svg);
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: 223.54px 175px;
+    background-size: 145px 300px;
 
     @include breakpoint(tablet) {
-        background-size: calc( 223.54px/2 ) calc( 175px/2 );
+        background-size: calc( 145px/2 ) calc( 300px/2 );
     }
 }
