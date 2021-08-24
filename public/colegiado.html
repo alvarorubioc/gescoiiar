@@ -15,6 +15,10 @@
     <link rel="shortcut icon" type="image/png" href="https://coiiar.es/wp-content/themes/coiiar/assets/img/favicon.png">
 
 	<link rel="stylesheet" href="assets/styles/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<script src="assets/js/gescoiiar.min.js"></script>
+	
 
 </head>
 
@@ -33,10 +37,8 @@
                     class="image wp-image-40  attachment-full size-full" alt="COIIAR" loading="lazy"
                     style="max-width: 100%; height: auto;">
 				</div><!-- .site-branding -->
-				<div class="site-search col-xs-6 col-md-5">
-					
-				</div><!-- .site-search -->
-				<div class="site-links col-xs-6 col-md-4 end-xs">
+				
+				<div class="site-links col-xs-6 col-md-9 end-xs">
 					<div class="menu-top-nav-container">
 						<ul id="top-menu" class="menu">
 							<li>
@@ -60,14 +62,14 @@
 				</div><!-- .site-links -->
 			</div>
 		</div>
-		<!--<div class="btn-menu">
+		<div class="btn-menu">
 			<button class="open-menu" aria-controls="primary-menu" aria-expanded="false">
 				<svg class="icon" width="24" height="24" viewBox="0 0 24 24">
-					<use xlink:href="/assets/icons/sprite-icons.svg#menu" />
+					<use xlink:href="./assets/icons/sprite-icons.svg#menu" />
 				</svg>
 				<span>MENÚ</span>
 			</button>
-		</div>-->
+		</div>
 		<nav id="site-navigation" class="main-navigation">
 			<div class="container">
 				<ul id="primary-menu" class="menu">
@@ -143,7 +145,7 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Solicitar al Colegio que os ponga en contacto</label>
                           </div>
-                        <button type="submit" class="btn--primary btn--full btn--md">Contactar</button>
+                          <a href="#modal-form" rel="modal:open" class="open-modal btn btn--primary btn--full btn--md">Contactar</a>
                       </form>
                       <div class="mt-2"><small>Recuerde tener actualizados sus datos de contacto en la sección de datos profesionales para que el colegiado pueda ponerse en contacto con usted.</small></div>
                 </div>
@@ -224,6 +226,26 @@
     </div>
 
 </main>
+
+<div id="modal-form" class="modal card" style="display:none;">
+    <div class="card-content">
+        <p class="text-h4"><strong>Enviar un email</strong></p>
+        <form class="mt-2">
+            <div class="mb-1">
+                <label for="subjet">Asunto</label><br>
+                <input type="text" id="subjet" name="subjet"><br>
+            </div>
+            <div class="mb-1">
+                <textarea name="message" rows="8">Mensaje</textarea>
+            </div>
+            <div class="mb-2 form-check">
+                <input type="checkbox" class="form-check-input" id="privacy">
+                <label class="form-check-label" for="privacy">He leído y acepto la <a href="#">política de privacidad.</a></label>
+            </div>
+            <button type="submit" class="btn--full btn--primary btn--md">Enviar</button>
+        </form>
+    </div>
+</div>
 
 <footer id="colophon" class="site-footer">
     <div class="container">
