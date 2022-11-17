@@ -39,6 +39,11 @@ a.btn--primary, .btn--primary {
 		background-color: $color__primary-dark;
 		color: $color__white;
 	}
+
+	.icon {
+		fill: $color__white !important;
+		margin: 0 $space-xxs;
+	}
 }
 
 a.btn--secondary, .btn--secondary {

@@ -19,8 +19,9 @@ textarea {
 	border-radius: $border__radius;
 	padding: $space-xxs;
 	width: 100%;
-	background-color: $color__gray;
+	background-color: $color__white;
 	border: solid 1px $color__gray;
+	@include font-size (1);
 
 	&:focus {
 		color: $color__primary-dark;
@@ -34,10 +35,15 @@ textarea {
 
 span.error {
 	color: $color__error;
+	@include font-size (1);
 }
 
 input[type="submit"] {
 	font-size: 100%;
+}
+
+label {
+	@include font-size (1);
 }
 
 // Search form
@@ -62,4 +68,16 @@ input[type="submit"] {
 	
 }
 
+.form-group {
+	select {
+		margin-bottom: $space--unit;
+	}
+}
 
+
+.drag-area {
+	border: 2px dashed $color__gray;
+	border-radius: $border__radius;
+	padding: $space-sm;
+	margin: $space-xl 0;
+  }

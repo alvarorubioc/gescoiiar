@@ -64,3 +64,25 @@ a.bagde {
     margin-top: $space-sm;
 
 }
+
+.alert {
+
+	&--info {
+		position: relative;
+		padding: $space-sm;
+		background-color: $color__primary-20;
+		border: 1px solid $color__primary-40;
+		@include font-size(1);
+
+		.alert-closebtn {
+			position: absolute;
+			top: 8px;
+			right: 8px;
+			&:hover { cursor: pointer;}
+
+			.icon {
+				fill: $color__error;
+			}
+		}
+	}
+}

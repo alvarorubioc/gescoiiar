@@ -93,192 +93,178 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="entry-title">
-                    <span class="text-h6">Ventanilla única</span>
-                    <h1>Registro de colegiados</h1>
-                    <div class="divider"></div>
-                    <small>Los datos personales mostrados en el presente listado son responsabilidad del Colegio Oficial de Ingenieros Industriales de Aragón y la Rioja cuya finalidad es gestionar el servicio con fines profesionales. Estos datos serán publicados en cumplimiento de una obligación legal y no podrán ser utilizados para el envío de publicidad o prospección comercial sin el consentimiento del usuario. Para más información sobre el tratamiento de sus datos puede dirigirse a la Política de Privacidad.</small> 
+                    <span class="text-h6">Únete</span>
+                    <h1>Asociado tipo graduado</h1>
                 </div>
             </div>
         </div><!-- .row -->
-        <div class="row">
-            <div class="col-xs-12 mb-6">
-                <form id="section-filters" class="bg-white">
-                    <div class="filters-search">
-                        
-                        <div class="form-group">
-                            <label class="screen-reader-text" for="nif">NIF o Empresa</label>
-                            <input type="search" class="form-control" id="nif" aria-describedby="nif" placeholder="NIF o Empresa">
-                        </div>
-                    
-                        <div class="form-group">
-                            <label class="screen-reader-text" for="nombre">Nombre o nº de colegiado</label>
-                            <input type="search" class="form-control" id="nombre" aria-describedby="Nombre" placeholder="Nombre o nº de colegiado">
-                        </div>
-
-                        <div class="btn-group">
-                            <button type="#" class="btn--white btn--md">Limpiar</button>
-                            <button type="submit" class="btn--primary btn--md">Buscar</button>
-                        </div>
-                        
-                    </div>
-
-                    <div class="filters-select">
-
-                        <div class="form-group">
-                            <select class="form-select dropdown" aria-label="Provincia">
-                                <option selected>Provincia</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                    
-                        <div class="form-group">
-                            <select class="form-select" aria-label="Tipo de profesional">
-                                <option selected>Tipo profesional</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                    
-                        <div class="form-group">
-                            <select class="form-select" aria-label="Sector">
-                                <option selected>Sector</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                    
-                        <div class="form-group">
-                            <select class="form-select" aria-label="Cargo">
-                                <option selected>Cargo</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                    
-                        <div class="form-group">
-                            <select class="form-select" aria-label="Área">
-                                <option selected>Área</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-
-                        <div class="btn-group">
-                            <button type="#" class="btn--white btn--md">Limpiar</button>
-                            <button type="submit" class="btn--primary btn--md">Buscar</button>
-                        </div>
-
-                        <div class="form-btn end-xs"><button type="#" class="btn--white btn--md">Limpiar todo</button></div>
-                    </div>
-                    
-                  </form>
+        <div class="row steps">
+            <div class="col-xs-12 col-md-4 mb-6">
+                <strong>1. Selecciona tu perfil</strong>
+                <div class="step-bar step-bar--active"></div>
+                <p>Estudiantes de ingeniería, máster en ingeniería industria, graduado/a o entidad/empresa.</p>
             </div>
-        </div><!-- .row  Filters -->
+            <div class="col-xs-12 col-md-4 mb-6">
+                <strong>2. Cumplimenta el formulario</strong>
+                <div class="step-bar step-bar--active"></div>
+                <p>Estudiantes de ingeniería, máster en ingeniería industria, graduado/a o entidad/empresa.</p>
+            </div>
+            <div class="col-xs-12 col-md-4 mb-6">
+                <strong>3. Documentación y firma</strong>
+                <div class="step-bar"></div>
+                <p>Descarga la documentación, revisa tus datos y confirma el proceso.</p>
+            </div>
+        </div><!-- .row Steps -->
     </div><!-- .container -->
 </section>
  
-<main id="section-main" class="page">
-
-    <div class="container pt-3">
-        <div class="row middle-xs between-xs">
-            <div class="col-xs-12 col-sm-6">
-                <p>2.000 Colegiados</p>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-                <nav aria-label="Page navigation">
-                    <ul class="pagination pagination-lg justify-content-center">
-                        <li class="page-item active"><span class="page-link">1</span></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    </ul>    
-                </nav>    
-            </div>
+<main class="page container mt-6 mb-8">
+    
+    <div class="alert--info">
+        <span>Antes de cumplimentar el formulario, tienes que preparar los documentos indicados a continuación: Título por ambas caras en PDF, foto de carné para tu perfil en JPG o PNG. Por favor, <strong>descarga nuestra orden sepa</strong>, cumpliméntala y adjunta cuando se indique.</span>
+        <div class="alert-closebtn" onclick="this.parentElement.style.display='none';">
+            <svg class="icon" width="16" height="16" viewBox="0 0 32 32">
+                <use xlink:href="./assets/icons/sprite-icons.svg#circle-x"></use>
+            </svg>
         </div>
     </div>
 
-    <div class="container mt-1">
-        <div class="card card--horizontal">
-            </a>
-            <div class="card-avatar">
-                <img width="54" height="54" src="./assets/img/avatar.png" alt="ASENSIO GIMENO, ANGEL" loading="lazy"/>
+    <form class="row mt-6">
+            
+        <div class="col-xs-12 mb-6">
+            <h3>1. Datos académicos</h3>
+            <div class="form-group mt-4">
+                <select class="form-select dropdown" aria-label="Grado">
+                    <option selected>Grado en estudios de arquitectura</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>    
+
+            <h5 class="mt-4 mb-2">Título del grado</h5>
+            <button class="btn--primary btn--md">
+                Adjuntar PDF
+                <svg class="icon" width="16" height="16" viewBox="0 0 24 24">
+                    <use xlink:href="./assets/icons/sprite-icons.svg#cloud-upload"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="col-xs-12 col-md-7 mb-6">
+            <h3>2. Datos personales</h3>
+            <div class="form-group mt-4">
+                <label for="nombre">Nombre y apellidos</label>
+                <input type="text" class="form-control error" id="nombre" aria-describedby="nombre">
+                <span class="error">Campo requerido</span>
             </div>
-            <div class="card-content">
-                <div class="text-caption mb-1">Nº colegiado: 0003844</div>
-                <p class="text-h4"><strong><a href="./colegiado.html">ASENSIO GIMENO, ANGEL</a></strong></p>
-                <div class="entry-meta mt-1">
-                    <div class="dflex middle-xs">
-                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
-                            <use xlink:href="./assets/icons/sprite-icons.svg#map-marker"></use>
-                        </svg>
-                        <small>C/ MAS DE LAS MATAS, 20. 50014  ZARAGOZA  ZARAGOZA</small>
-                    </div>
-                    <div class="dflex middle-xs">
-                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
-                            <use xlink:href="./assets/icons/sprite-icons.svg#info"></use>
-                        </svg>
-                        <small>INGENIERO INDSUTRIAL</small>
-                    </div>
-                </div><!-- .entry-meta -->	
-            </div>	
-            <div class="card-info pa-2">
-                <span class="bagde bagde--success">Habilitado</span>
+            <div class="form-group mt-1">
+                <label for="DNI">DNI</label>
+                <input type="text" class="form-control" id="DNI" aria-describedby="DNI" placeholder="No use símbolos o espacios">
             </div>
-
-        </div><!-- .card -->
-
-
-        <div class="card card--horizontal">
-            </a>
-            <div class="card-avatar">
-                <img width="54" height="54" src="./assets/img/avatar.png" alt="ASENSIO GIMENO, ANGEL" loading="lazy"/>
+            <div class="form-group mt-1">
+                <label for="birthday">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="birthday" aria-describedby="fecha nacimiento">
             </div>
-            <div class="card-content">
-                <div class="text-caption mb-1">Nº colegiado: 0002503</div>
-                <p class="text-h4"><strong><a href="./colegiado.html">BRATOS LOPEZ, JESUS</a></strong></p>
-                <div class="entry-meta mt-1">
-                    <div class="dflex middle-xs">
-                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
-                            <use xlink:href="./assets/icons/sprite-icons.svg#map-marker"></use>
-                        </svg>
-                        <small>C/ ESERA, 2 CASA 12. 50430  MARIA DE HUERVA  ZARAGOZA</small>
-                    </div>
-                    <div class="dflex middle-xs">
-                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
-                            <use xlink:href="./assets/icons/sprite-icons.svg#info"></use>
-                        </svg>
-                        <small>INGENIERO INDSUTRIAL</small>
-                    </div>
-                </div><!-- .entry-meta -->	
-            </div>	
-            <div class="card-info pa-2">
-                <span class="bagde bagde--error">No habilitado</span>
+            <div class="form-group mt-1">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email">
             </div>
-
-        </div><!-- .card -->
-
-
-    </div>
-
-    <div class="container mb-3">
-        <div class="row end-xs">
-            <div class="col-xs-12 col-sm-6">
-                <nav aria-label="Page navigation">
-                    <ul class="pagination pagination-lg justify-content-center">
-                        <li class="page-item active"><span class="page-link">1</span></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    </ul>    
-                </nav>    
+            <div class="form-group mt-1">
+                <label for="phone">Teléfono</label>
+                <input type="tel" class="form-control" id="phone" aria-describedby="teléfono">
+            </div>
+            <div class="form-group mt-1">
+                <label for="address">Dirección</label>
+                <input type="text" class="form-control" id="address" aria-describedby="Dirección">
+            </div>
+            <div class="form-group mt-1">
+                <label for="city">Localidad</label>
+                <input type="text" class="form-control" id="city" aria-describedby="Localidad">
+            </div>
+            <div class="form-group mt-1 row">
+                <div class="col-xs-12 col-md-6">
+                    <label for="provincia">Provincia</label>
+                    <select class="form-select dropdown" id="provincia" aria-label="Provincia">
+                        <option selected>Seleccionar</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <label for="cp">CP</label>
+                    <input type="text" class="form-control" id="cp" aria-describedby="Código postal">
+                </div>
+            </div>
+            <div class="form-group mt-1">
+                <label for="linkedin">LinkedIn</label>
+                <input type="text" class="form-control" id="linkedin" aria-describedby="Linkedin">
             </div>
         </div>
-    </div>
 
+        <div class="col-xs-12 col-md-offset-1 col-md-4">
+            <h5>Adjunta tu foto de perfil</h5>
+            <div class="drag-area center-xs">
+                <div class="avatar mb-1">
+                    <img width="80" height="80" src="./assets/img/avatar.png" alt=""/>
+                </div>
+                <div class="mb-2"><small>Arrastra aquí o sube tu foto de perfil. Tamaño idóneo 120x120 px en JPG o PNG</small></div>
+                <input type="file" hidden>
+                <button class="btn--primary btn--md">
+                    Subir imagen
+                    <svg class="icon" width="16" height="16" viewBox="0 0 24 24">
+                        <use xlink:href="./assets/icons/sprite-icons.svg#cloud-upload"></use>
+                    </svg>
+                </button>
+            </div>
+            
+        </div>
+
+        <div class="col-xs-12 mb-6">
+            <h3>3. Datos laborales</h3>
+            <div class="mb-1 mt-4 form-check">
+                <input type="checkbox" class="form-check-input" id="cuenta-ajena">
+                <label class="form-check-label" for="cuenta-ajena">Trabajador por cuenta ajena</label>
+            </div>
+            <div class="mb-1 form-check">
+                <input type="checkbox" class="form-check-input" id="autonomo">
+                <label class="form-check-label" for="autonomo">Autónomo</label>
+            </div>
+            <div class="mb-1 form-check">
+                <input type="checkbox" class="form-check-input" id="desempleado">
+                <label class="form-check-label" for="desenpleado">Desempleado</label>
+
+                <div class="pl-2 mt-1 form-check">
+                    <input type="radio" class="form-check-input" id="ofertas-empleo">
+                    <label class="form-check-label" for="ofertas-empleo">Deseo estar informado sobre las ofertas de empleo de COIIAR</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-7 mb-6">
+            <h3>4. Datos bancarios</h3>
+            <div class="form-group mt-1 row">
+                <div class="col-xs-12 col-md-8">
+                    <label for="iban">IBAN</label>
+                    <input type="text" class="form-control" id="iban" aria-describedby="IBAN">
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <label for="bic">BIC</label>
+                    <input type="text" class="form-control" id="bic" aria-describedby="BIC">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 end-xs">
+            <div class="btn-group-2">
+                <button type="#" class="btn--white btn--md">Volver</button>
+                <button type="submit" class="btn--secondary btn--md">Continuar</button>
+            </div>
+        </div>
+        
+    </form>
+        
 </main>
 
 <footer id="colophon" class="site-footer">
