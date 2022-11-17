@@ -32,3 +32,13 @@
 		fill: $color__gray;
 	}
 }
+
+#formacion-info {
+	p {
+		@include font-size (1);
+	}
+	svg {
+		margin-right: $space-xxs;
+		fill: $color__primary;
+	}
+}
