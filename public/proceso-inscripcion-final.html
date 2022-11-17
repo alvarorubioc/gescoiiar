@@ -226,7 +226,7 @@
                     <input type="checkbox" class="form-check-input" id="">
                     <label class="form-check-label" for="Pequeña">He leído y acepto la <a href="">política de privacidad.</a></label>
                 </div>
-                <button type="submit" class="btn--secondary btn--md btn--full">Firmar</button>
+                <a href="#modal-sms" rel="modal:open" class="open-modal btn btn--secondary btn--full btn--md">Firmar</a>
             </div>
             
         </div>
@@ -236,6 +236,32 @@
     </form>
         
 </main>
+
+<div id="modal-sms" class="modal card bg-primary-light" style="display:none;">
+    <div class="card-content">
+        <p class="text-h4"><strong>Confirmación de la firma</strong></p>
+        <form class="mt-2">
+            <div>
+                <p>Introduce el código que hemos enviado por SMS al teléfono terminado en *** *** 888</p>
+            </div>
+            <div id="otp" class="dflex form-otp center-xs mt-2 mb-1">
+                <input class="center-xs form-control" type="text" id="digit-1" name="digit-1" data-next="digit-2" maxlength="1" />
+                <input class="center-xs form-control" type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" maxlength="1" />
+                <input class="center-xs form-control" type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" maxlength="1" />
+                <input class="center-xs form-control" type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" maxlength="1" />
+            </div>
+            <div class="mb-1">
+                <p>¿No recibes el código en tu teléfono? <a href="">Prueba a mandarlo por email.</a></p>
+            </div>
+
+            <div class="mb-1 mt-4">
+                <small>Firma a través de un tercero de confianza, con autorización por el solicitante garantizada mediante una OTP de un solo uso enviado a su dispositivo.</a></small>
+            </div>
+            
+            <button type="submit" class="btn--full btn--primary btn--md">Confirmar</button>
+        </form>
+    </div>
+</div>
 
 <footer id="colophon" class="site-footer">
     <div class="container">

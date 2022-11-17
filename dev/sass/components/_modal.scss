@@ -59,3 +59,13 @@
         padding: 20px;
       }
   }
+
+  #otp {
+    max-width: 420px;
+    input {
+        max-width: 380px;
+        min-height: 120px;
+        margin-right: $space-xs;
+        @include font-size(1.25);
+    }
+  }
